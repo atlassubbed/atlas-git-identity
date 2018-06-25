@@ -119,6 +119,11 @@ describe("parseAuthor", function(){
 })
 
 describe("setIdentity", function(){
+
+  beforeEach(function(){
+    revert && revert();
+  })
+  
   it("should throw error if given no fields", function(){
     let calledExec = 0;
     revert = helpers.__set__("exec", (cmd, opts) => {
