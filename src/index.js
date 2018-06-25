@@ -24,8 +24,9 @@ const setIdentity = (author, cwd, cb) => {
   let cmd = "";
   for (let field in author)
     cmd += `git config user.${field} ${author[field]} && `;
+  if (!cmd) return cb(new Error("no fields provided"));
   exec(cmd.slice(0,-4), {cwd}, (err, stdout, stderr) => {
-    err ? cb(err) : cb();
+    err ? cb(err) : cb(null);
   })
 }
 

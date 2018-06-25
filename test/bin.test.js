@@ -5,7 +5,7 @@ const { initializeRepo, runBin, getConfig } = require("./helpers")
 
 const bin = join(__dirname, "../src/bin.js")
 
-describe("git identity setter", function(){
+describe("cli tool interface", function(){
   describe("should be able to take no args", function(){
     it("should set the local git config author based off of package.json", function(done){
       const pkg = {
