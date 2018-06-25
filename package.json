@@ -10,7 +10,9 @@
   "keywords": [
     "atlassubbed",
     "utils",
-    "utility"
+    "utility",
+    "cli",
+    "command",
     "git",
     "identity",
     "privacy",
