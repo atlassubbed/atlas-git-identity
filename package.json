@@ -1,6 +1,6 @@
 {
   "name": "atlas-git-identity",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool which sets a git repository's author based on package.json or arguments.",
   "scripts": {
     "test-server": "mocha --colors --watch --recursive './test/**/*.test.js'",
