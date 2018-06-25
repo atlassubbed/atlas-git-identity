@@ -6,11 +6,6 @@ const helpers = rewire("../src/index")
 let revert;
 
 describe("parseAuthor", function(){
-
-  beforeEach(function(){
-    revert && revert();
-  })
-
   describe("requires an author argument", function(){
     it("should fail if there is an invalid author", function(){
       const badAuthors = [true, 3.14285714286, {}]
@@ -123,7 +118,7 @@ describe("setIdentity", function(){
   beforeEach(function(){
     revert && revert();
   })
-  
+
   it("should throw error if given no fields", function(){
     let calledExec = 0;
     revert = helpers.__set__("exec", (cmd, opts) => {
