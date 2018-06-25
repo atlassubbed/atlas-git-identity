@@ -73,7 +73,7 @@ setIdentity({name: "atlassubbed", signingkey: "123"}, err => {
 
 ## caveats
 
-At first, this package automatically ran `git config --global user.useConfigOnly true` to remove that step as well, however it's a bad idea because it may not be desired on some machines. Furthermore, the step only needs to be run once, so it's not a problem. Please run this command separately if you would like to force a local identity on your git projects.
+At first, this package automatically ran `git config --global user.useConfigOnly true` to remove that step as well, however it's a bad idea because it may not be desired on some machines. Furthermore, the step only needs to be run once and is entirely optional, so it's not a problem. Please run this command separately if you would like to force a local identity on your git projects.
 
 
 
