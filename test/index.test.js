@@ -165,7 +165,7 @@ describe("setIdentity", function(){
       done()
     })
   })
-  it("should provide relay no error on success", function(done){
+  it("should relay no error on success", function(done){
     const msg = "cmd failed"
     revert = helpers.__set__("exec", (cmd, opts, cb) => {
       cb(null, "stderr", "stdout")
