@@ -17,7 +17,7 @@
     "identity",
     "privacy",
     "config",
-    "user",
+    "user"
   ],
   "author": "atlassubbed <atlassubbed@gmail.com>",
   "license": "Apache-2.0",
