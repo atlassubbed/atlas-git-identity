@@ -3,8 +3,8 @@
   "version": "1.0.2",
   "description": "A CLI tool which sets a git repository's author based on package.json or arguments.",
   "scripts": {
-    "test-server": "mocha --colors --watch --recursive './test/**/*.test.js'",
-    "test": "mocha --colors --recursive './test/**/*.test.js'"
+    "test-server": "mocha --colors --watch --recursive './test/**/*.test.js' || rm -rf ./test/tmp-*",
+    "test": "mocha --colors --recursive './test/**/*.test.js' || rm -rf ./test/tmp-*"
   },
   "bin": {
     "git-identity": "./src/bin.js"
