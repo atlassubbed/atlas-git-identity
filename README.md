@@ -2,6 +2,8 @@
 
 A CLI tool which sets a git repository's author based on package.json or arguments.
 
+[![Travis](https://img.shields.io/travis/atlassubbed/atlas-git-identity.svg)](https://travis-ci.org/atlassubbed/atlas-git-identity)
+
 ---
 
 ## install
